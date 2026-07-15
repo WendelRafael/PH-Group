@@ -21,7 +21,7 @@ sem dependências externas. Feito para o teste técnico **PH CORE / Prohall**.
 
 ```bash
 # 1. Clone e entre na pasta
-git clone <url-deste-repositorio>
+git clone https://github.com/WendelRafael/PH-Group.git
 cd <pasta-do-repositorio>
 
 # 2. Importe o banco (estrutura + dados já populados)
@@ -52,8 +52,7 @@ Clique em **Sincronizar catálogo** para buscar jogos novos na FreeToGame a qual
 ├── test/              # testes em PHP puro — php test/run.php
 ├── docs/              # decisões técnicas e planejamento
 ├── start.bat          # atalho Windows: importa o banco (se preciso) e sobe o servidor
-├── AGENTS.md          # regras para quem (humano ou IA) mexer no código
-└── CLAUDE.md          # contexto rápido para o Claude Code
+└── AGENTS.md          # regras para quem (humano ou IA) mexer no código
 ```
 
 ## 🔌 API interna
