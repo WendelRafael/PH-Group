@@ -21,8 +21,8 @@ sem dependências externas. Feito para o teste técnico **PH CORE / Prohall**.
 
 ```bash
 # 1. Clone e entre na pasta
-git clone <url-deste-repositorio>
-cd <pasta-do-repositorio>
+git clone https://github.com/WendelRafael/PH-Group.git
+cd PH-Group
 
 # 2. Importe o banco (estrutura + dados já populados)
 mysql -u root < database/dump.sql
