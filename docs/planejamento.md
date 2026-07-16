@@ -56,8 +56,8 @@ Endpoints úteis opcionais: `/games?category=...`, `/games?platform=...`, `/game
 
 | Camada | Tecnologia | Situação na máquina (16/07/2026) |
 |--------|-----------|----------------------------------|
-| Backend | PHP 8.x (puro, sem framework) | ❌ **Instalar** |
-| Banco | MySQL / MariaDB | ❌ **Instalar** |
+| Backend | PHP 8.3.30 (puro, sem framework) | ✅ Instalado (Laragon, no PATH) |
+| Banco | MySQL 8.4.3 | ✅ Instalado (Laragon, no PATH; root sem senha) |
 | Frontend | HTML5 + CSS3 + JavaScript vanilla (fetch API) | ✅ Nada a instalar |
 | Versionamento | Git | ✅ Já instalado |
 | Servidor local | Servidor embutido do PHP (`php -S`) ou Apache do Laragon | vem com o PHP/Laragon |
@@ -121,13 +121,18 @@ PHGroup/
 │   ├── schema.sql              # estrutura (referência de desenvolvimento)
 │   └── dump.sql                # DUMP COMPLETO (estrutura + dados) — exigido no Git
 │
+├── test/                       # testes unitários do Agente de Funcionalidade (ver AGENTS.md)
+│   ├── run.php                 # runner: executa todos os *Test.php (PHP puro, sem PHPUnit)
+│   └── *Test.php               # um arquivo de teste por arquivo-fonte
+│
 ├── docs/
 │   └── decisoes.md             # contexto: por que cada decisão foi tomada
 │
 ├── .env.example                # modelo de credenciais (copiar p/ .env)
 ├── .gitignore                  # ignora .env e temporários
 ├── start.bat                   # atalho Windows: sobe o servidor com 2 cliques
-├── AGENTS.md                   # regras/contexto p/ IAs que mexerem no projeto ("ambientação")
+├── AGENTS.md                   # Conselho de Aprovação de Código (regras p/ IAs)
+├── CLAUDE.md                   # contexto geral p/ o Claude Code (lido a cada sessão)
 └── README.md                   # o quê, como rodar (3 passos), estrutura, endpoints
 ```
 

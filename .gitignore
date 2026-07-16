@@ -1,0 +1,10 @@
+# credenciais locais (use .env.example como modelo)
+.env
+
+# artefatos de sistema/editor
+Thumbs.db
+.DS_Store
+*.log
+
+# clone de verificação local (etapa de entrega)
+teste-clone/
