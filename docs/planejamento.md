@@ -129,16 +129,19 @@ PHGroup/
 │   └── decisoes.md             # contexto: por que cada decisão foi tomada
 │
 ├── .env.example                # modelo de credenciais (copiar p/ .env)
-├── .gitignore                  # ignora .env e temporários
+├── .gitignore                  # ignora .env, temporários e arquivos internos de dev
 ├── start.bat                   # atalho Windows: sobe o servidor com 2 cliques
-├── AGENTS.md                   # Conselho de Aprovação de Código (regras p/ IAs)
-├── CLAUDE.md                   # contexto geral p/ o Claude Code (lido a cada sessão)
 └── README.md                   # o quê, como rodar (3 passos), estrutura, endpoints
 ```
 
+> Nota: `AGENTS.md` e `CLAUDE.md` (regras do Conselho de Aprovação e contexto
+> para IAs) são arquivos internos de desenvolvimento — existem na máquina local,
+> mas ficam fora do repositório entregue (`.gitignore`). O resultado do processo
+> deles está registrado em [pareceres.md](pareceres.md).
+
 - Raiz limpa: só arquivos de entrada/contexto — atende o critério "nada jogado na raiz".
 - `public/` como docroot: código de negócio e credenciais ficam inacessíveis via URL.
-- `AGENTS.md` + `docs/` + `README.md` cobrem o critério **Ambientação/Clareza**.
+- `docs/` + `README.md` cobrem o critério **Ambientação/Clareza**.
 - Este `PLANEJAMENTO.md` será movido para `docs/` (ou removido) antes da entrega.
 
 ---

@@ -33,7 +33,7 @@ try {
 } catch (Throwable $e) {
     http_response_code(500);
     echo json_encode([
-        'erro' => 'Não foi possível ler o banco de dados. Ele está rodando? '
+        'erro' => 'Não foi possível ler o banco de dados. Valide se ele está rodando. '
                 . 'Veja o passo a passo no README.',
     ], JSON_UNESCAPED_UNICODE);
 }

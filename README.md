@@ -50,10 +50,8 @@ Clique em **Sincronizar catálogo** para buscar jogos novos na FreeToGame a qual
 ├── config/            # configuração (lê .env, com padrões do Laragon)
 ├── database/          # schema.sql (estrutura) e dump.sql (estrutura + dados)
 ├── test/              # testes em PHP puro — php test/run.php
-├── docs/              # decisões técnicas e planejamento
-├── start.bat          # atalho Windows: importa o banco (se preciso) e sobe o servidor
-├── AGENTS.md          # regras para quem (humano ou IA) mexer no código
-└── CLAUDE.md          # contexto rápido para o Claude Code
+├── docs/              # decisões técnicas, planejamento e pareceres de revisão
+└── start.bat          # atalho Windows: importa o banco (se preciso) e sobe o servidor
 ```
 
 ## 🔌 API interna
@@ -77,7 +75,7 @@ descartável (`ph_catalogo_test`) e são pulados se o MySQL estiver desligado.
 
 - [docs/decisoes.md](docs/decisoes.md) — por que cada decisão técnica foi tomada
 - [docs/planejamento.md](docs/planejamento.md) — planejamento original do projeto
-- [AGENTS.md](AGENTS.md) — regras de contribuição (humanos e IAs)
+- [docs/pareceres.md](docs/pareceres.md) — pareceres do processo interno de revisão de código
 
 ---
 
