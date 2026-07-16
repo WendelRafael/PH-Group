@@ -8,3 +8,7 @@ Thumbs.db
 
 # clone de verificação local (etapa de entrega)
 teste-clone/
+
+#Arquivos usado apenas p develop
+CLAUDE.md
+AGENTS.md
